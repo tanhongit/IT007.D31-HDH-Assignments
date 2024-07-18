@@ -21,7 +21,7 @@ if [ -d "$IMAGES_PATH" ]; then
     for file in "$IMAGES_PATH"/*.png; do
         mv "$file" ~/PNG
     done
-    echo "Number of ~/PNG images: $(ls ~/PNG | wc -l)"
+    echo "Number of ~/PNG images after move: $(ls ~/PNG | wc -l)"
 fi
 
 # c. Di chuyển tất cả file JPG trong thư mục OS_LAB2_IMG ở trên vào thư mục JPG. Xuất ra màn hình số lượng ảnh JPG.
@@ -31,5 +31,5 @@ if [ -d "$IMAGES_PATH" ]; then
     for file in "$IMAGES_PATH"/*.jpg; do
         mv "$file" ~/JPG
     done
-    echo "Number of ~/JPG images: $(ls ~/JPG | wc -l)"
+    echo "Number of ~/JPG images after move: $(ls ~/JPG | wc -l)"
 fi
